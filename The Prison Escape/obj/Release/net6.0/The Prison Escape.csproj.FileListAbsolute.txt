@@ -1,0 +1,35 @@
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Release\net6.0\The Prison Escape.exe
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Release\net6.0\The Prison Escape.deps.json
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Release\net6.0\The Prison Escape.runtimeconfig.json
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Release\net6.0\The Prison Escape.dll
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Release\net6.0\The Prison Escape.pdb
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Release\net6.0\DiscordRPC.dll
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Release\net6.0\Microsoft.Toolkit.HighPerformance.dll
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Release\net6.0\Newtonsoft.Json.dll
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Release\net6.0\Raylib-CsLo.dll
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Release\net6.0\RayWrapper.dll
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Release\net6.0\ZimonIsHimUtils.dll
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Release\net6.0\runtimes\linux-x64\native\libraylib.so
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Release\net6.0\runtimes\osx-x64\native\libraylib-no-extras.dylib
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Release\net6.0\runtimes\osx-x64\native\libraylib.dylib
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Release\net6.0\runtimes\win-x64\native\raylib.dll
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Release\net6.0\runtimes\win-x64\native\raylib.pdb
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Release\net6.0\runtimes\win-x86\native\physac.dll
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Release\net6.0\runtimes\win-x86\native\physac.pdb
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Release\net6.0\runtimes\win-x86\native\raygui.dll
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Release\net6.0\runtimes\win-x86\native\raygui.pdb
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Release\net6.0\runtimes\win-x86\native\raylib.dll
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Release\net6.0\runtimes\win-x86\native\raylib.pdb
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Release\net6.0\RayWrapper.Collision.dll
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Release\net6.0\RayWrapper.Collision.pdb
+D:\RiderProjects\The Prison Escape\The Prison Escape\obj\Release\net6.0\The Prison Escape.csproj.AssemblyReference.cache
+D:\RiderProjects\The Prison Escape\The Prison Escape\obj\Release\net6.0\The Prison Escape.GeneratedMSBuildEditorConfig.editorconfig
+D:\RiderProjects\The Prison Escape\The Prison Escape\obj\Release\net6.0\The Prison Escape.AssemblyInfoInputs.cache
+D:\RiderProjects\The Prison Escape\The Prison Escape\obj\Release\net6.0\The Prison Escape.AssemblyInfo.cs
+D:\RiderProjects\The Prison Escape\The Prison Escape\obj\Release\net6.0\The Prison Escape.csproj.CoreCompileInputs.cache
+D:\RiderProjects\The Prison Escape\The Prison Escape\obj\Release\net6.0\The Prison Escape.csproj.CopyComplete
+D:\RiderProjects\The Prison Escape\The Prison Escape\obj\Release\net6.0\The Prison Escape.dll
+D:\RiderProjects\The Prison Escape\The Prison Escape\obj\Release\net6.0\refint\The Prison Escape.dll
+D:\RiderProjects\The Prison Escape\The Prison Escape\obj\Release\net6.0\The Prison Escape.pdb
+D:\RiderProjects\The Prison Escape\The Prison Escape\obj\Release\net6.0\The Prison Escape.genruntimeconfig.cache
+D:\RiderProjects\The Prison Escape\The Prison Escape\obj\Release\net6.0\ref\The Prison Escape.dll

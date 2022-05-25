@@ -1,0 +1,12 @@
+D:\RiderProjects\The Prison Escape\RayWrapper.Collision\bin\Release\net6.0\RayWrapper.Collision.deps.json
+D:\RiderProjects\The Prison Escape\RayWrapper.Collision\bin\Release\net6.0\RayWrapper.Collision.dll
+D:\RiderProjects\The Prison Escape\RayWrapper.Collision\bin\Release\net6.0\RayWrapper.Collision.pdb
+D:\RiderProjects\The Prison Escape\RayWrapper.Collision\obj\Release\net6.0\RayWrapper.Collision.csproj.AssemblyReference.cache
+D:\RiderProjects\The Prison Escape\RayWrapper.Collision\obj\Release\net6.0\RayWrapper.Collision.GeneratedMSBuildEditorConfig.editorconfig
+D:\RiderProjects\The Prison Escape\RayWrapper.Collision\obj\Release\net6.0\RayWrapper.Collision.AssemblyInfoInputs.cache
+D:\RiderProjects\The Prison Escape\RayWrapper.Collision\obj\Release\net6.0\RayWrapper.Collision.AssemblyInfo.cs
+D:\RiderProjects\The Prison Escape\RayWrapper.Collision\obj\Release\net6.0\RayWrapper.Collision.csproj.CoreCompileInputs.cache
+D:\RiderProjects\The Prison Escape\RayWrapper.Collision\obj\Release\net6.0\RayWrapper.Collision.dll
+D:\RiderProjects\The Prison Escape\RayWrapper.Collision\obj\Release\net6.0\refint\RayWrapper.Collision.dll
+D:\RiderProjects\The Prison Escape\RayWrapper.Collision\obj\Release\net6.0\RayWrapper.Collision.pdb
+D:\RiderProjects\The Prison Escape\RayWrapper.Collision\obj\Release\net6.0\ref\RayWrapper.Collision.dll
