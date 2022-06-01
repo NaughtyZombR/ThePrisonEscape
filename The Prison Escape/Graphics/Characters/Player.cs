@@ -1,105 +1,77 @@
-using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
 using Raylib_CsLo;
-using Raylib_CsLo.InternalHelpers;
 using RayWrapper;
-using RayWrapper.Collision;
-using RayWrapper.Objs;
-using RayWrapper.Vars;
-using The_Prison_Escape.Graphics.Characters;
-using The_Prison_Escape.Graphics.UI;
-using The_Prison_Escape.Node;
 using static Raylib_CsLo.Raylib;
-using static RayWrapper.Collision.Collision;
-using static RayWrapper.GameBox;
+using static The_Prison_Escape.Global.Global;
+using Rectangle = Raylib_CsLo.Rectangle;
 
 namespace The_Prison_Escape.Graphics.Characters
 {
     public class Player : Node.Node
     {
-        public static float moveSpeed = 1.52f;
+        private const float MoveSpeed = 1.52f;
         private Vector2 moveVector;
 
         private static double currentFrame;
         private static int numLastFrame = 2;
 
         private static Directions currentDir = Directions.Down;
-        // private int moveIndicatorX;
-        // private int moveIndicatorY;
 
-        private Player player;
-        
-        public enum Directions
+        private enum Directions
         {
             Up,
             Left,
             Down,
             Right
         }
-        //
-        // public Dictionary<Directions, bool> DirOfCollisions = new Dictionary<Directions, bool>()
-        // {
-        //     {Directions.Up, false},
-        //     {Directions.Left, false},
-        //     {Directions.Down, false},
-        //     {Directions.Right, false}
-        // };
 
-
-        
-        
-        
         public Player(Rectangle rect) : base(rect, Textures.PlayerTexture)
         {
             tag = "player";
-            //texture = Global1.Graphics1.texPlayer;
         }
 
         public void Movement()
         {
-            
-            
-            
-            
+
             var keyUp = IsKeyDown(KeyboardKey.KEY_W) || IsKeyDown(KeyboardKey.KEY_UP);
             var keyLeft = IsKeyDown(KeyboardKey.KEY_A) || IsKeyDown(KeyboardKey.KEY_LEFT);
             var keyDown = IsKeyDown(KeyboardKey.KEY_S) || IsKeyDown(KeyboardKey.KEY_DOWN);
             var keyRight = IsKeyDown(KeyboardKey.KEY_D) || IsKeyDown(KeyboardKey.KEY_RIGHT);
-            
+
             var hMove = (keyLeft ? -1 : 0) + (keyRight ? 1 : 0);
             var vMove = (keyUp ? -1 : 0) + (keyDown ? 1 : 0);
-            
+
             Animate(keyUp, keyLeft, keyDown, keyRight);
 
 
             moveVector = new Vector2(hMove, vMove);
-            
+
             if (moveVector.Length() > 1)
                 moveVector = Vector2.Normalize(moveVector);
+
+            var velocityPlayer = moveVector * MoveSpeed;
+
+            var originPosition = Position;
             
-            //velocity = moveVector * moveSpeed;
-            Position = new Vector2(Position.X + moveVector.X * moveSpeed, Position.Y + moveVector.Y * moveSpeed);
+            Position = new Vector2(Position.X + velocityPlayer.X, Position.Y + velocityPlayer.Y);
             rect = new Rectangle(Position.X, Position.Y, rect.width, rect.height);
 
+            if (Collision())
+            {
+                Position = originPosition;
+                rect = new Rectangle(Position.X, Position.Y, rect.width, rect.height);
+            }
             
-            Collision();
-
-
-            //Console.WriteLine((velocity.X) + " " + velocity.Y);
-
-
         }
-
 
         private static void Animate(bool keyUp, bool keyLeft, bool keyDown, bool keyRight)
         {
             currentFrame += 0.05;
-            
+
             if (currentFrame < numLastFrame - 2 || currentFrame >= numLastFrame)
                 currentFrame = numLastFrame - 2;
-            
+
             if (keyUp)
                 currentDir = Directions.Up;
             if (keyLeft)
@@ -119,90 +91,24 @@ namespace The_Prison_Escape.Graphics.Characters
             };
         }
 
-        private void Collision()
+        private bool Collision()
         {
-            void StopMove(RectCollider collider, Directions dir, bool isGreaterZero)
-            {
-                var temp = isGreaterZero ? -1 : 1;
+            var tempNodes = nodes.Where(el =>
+                el.rect.IsColliding(rect) &&
+                el.tag is "wall" or "bars");
 
-                switch (dir)
-                {
-                    case Directions.Left or Directions.Right:
-                        Position = new Vector2(collider.Position.X + collider.rect.width * temp, Position.Y);
-                        rect = new Rectangle(collider.Position.X + collider.rect.width * temp, Position.Y, rect.width,
-                            rect.height);
-                        break;
-                    
-                    case Directions.Up or Directions.Down:
-                        Position = new Vector2(Position.X, collider.rect.y + collider.rect.height * temp);
-                        rect = new Rectangle(Position.X, collider.rect.y + collider.rect.height * temp, rect.width, 
-                            rect.height);
-                        break;
-                }
-            }
+            var enumerableNodes = tempNodes.ToList();
             
-            for (var i = (int)rect.X/16 * 16; i < (rect.x + rect.width)/16 * 16; i+=16)
-            for (var j = (int)rect.Y/16 * 16; j < (rect.y + rect.height)/16 * 16; j+=16)
-            {
-                float[,,] arr;
-                var node = Global.Global.nodes.Where(e => e.Position.X == i && 
-                                                          e.Position.Y == j && e.tag == "wall");
-                
-                
-                
-                
-                
-                
-                foreach (var n in node)
-                {
-                    switch (moveVector.X)
-                    {
-                        case > 0:
-                            StopMove(n, Directions.Left, true);
-                            break;
-                        case < 0:
-                            StopMove(n, Directions.Right, false);
-                            break;
-                    }
+            return enumerableNodes.Count != 0;
 
-                    switch (moveVector.Y)
-                    {
-                        case > 0:
-                            StopMove(n, Directions.Down, true);
-                            break;
-                        case < 0:
-                            StopMove(n, Directions.Up, false);
-                            break;
-                    }
-                    
-                    
-                    moveVector = Vector2.Zero;
-                }
-            
-            }
         }
-
-        public override void InCollision(Collider c)
+    
+    public override void RenderShape(Vector2 pos)
         {
-            if (c is Node.Node && c.tag == "wall") 
-            {
-                
-            } 
-        }
-        
-        // public override void ExitCollision(Collider c)
-        // {
-        //     if (c is Node.Node)
-        //     {
-        //     }
-        // }
-        //
-        
-        public override void RenderShape(Vector2 pos)
-        {
-            BeginMode2D(Global.Global.camera);
+            BeginMode2D(camera);
             
-            DrawTextureRec(Textures.PlayerTexture, new Rectangle(16*(int)currentFrame, 16, 16, 16),pos, WHITE);
+            DrawTextureRec(Textures.PlayerTexture, 
+                new Rectangle(16*(int)currentFrame, 16, 16, 16),pos, WHITE);
 
             EndMode2D();
         }

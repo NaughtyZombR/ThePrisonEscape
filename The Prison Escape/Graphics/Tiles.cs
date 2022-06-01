@@ -1,10 +1,5 @@
-using System;
-using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Net.Http.Headers;
 using System.Numerics;
-using Newtonsoft.Json;
 using Raylib_CsLo;
 using static Raylib_CsLo.Raylib;
 using static The_Prison_Escape.Global.Global;
@@ -16,6 +11,7 @@ namespace The_Prison_Escape.Graphics
         public string name { get; set; }
         public int x { get; set; }
         public int y { get; set; }
+        
 
         public Tile(int x, int y, string tileName = "")
         {
@@ -33,6 +29,8 @@ namespace The_Prison_Escape.Graphics
 
             if (IdWalls.Contains(tileId))
                 tag = "wall";
+            else if (IdBars.Contains(tileId))
+                tag = "bars";
             else if (IdUnbreakable.Contains(tileId))
                 tag = "unbreakable";
             else
@@ -43,7 +41,7 @@ namespace The_Prison_Escape.Graphics
         {
             BeginMode2D(camera);
             
-            DrawTextureRec(Textures.tilesTexture, 
+            DrawTextureRec(Textures.TilesTexture, 
                 new Rectangle(TilesDict[tileId].x * CellSize, TilesDict[tileId].y * CellSize, 
                 CellSize, CellSize),pos, WHITE);
 

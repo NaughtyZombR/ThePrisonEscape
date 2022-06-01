@@ -11,10 +11,10 @@ using Raylib_CsLo;
 using RayWrapper;
 using RayWrapper.Objs;
 using RayWrapper.Vars;
+using The_Prison_Escape.Graphics;
 using The_Prison_Escape.Graphics.UI;
 using The_Prison_Escape.Node;
 using static Raylib_CsLo.Raylib;
-using static RayWrapper.Collision.Collision;
 using static RayWrapper.GameBox;
 
 
@@ -25,11 +25,9 @@ namespace The_Prison_Escape
         
         private static void Main()
         {
-            
             SceneManager.AddScene("Level",new Level());
-            SceneManager.AddScene("LevelWithBalls",new LevelWithBalls());
-            
-            new GameBox(SceneManager.Scenes["Level"], new Vector2(1280, 720),
+            // SceneManager.AddScene("LevelWithBalls",new LevelWithBalls());
+            new GameBox(new Level(), new Vector2(1280, 720),
                 "The Prison Escape", 60);
         }
 

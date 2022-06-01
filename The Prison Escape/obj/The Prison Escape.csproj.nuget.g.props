@@ -17,19 +17,9 @@
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Content Include="$(NuGetPackageRoot)raylib-cslo\4.0.1\contentFiles\any\netstandard2.1\raylib.dll" Condition="Exists('$(NuGetPackageRoot)raylib-cslo\4.0.1\contentFiles\any\netstandard2.1\raylib.dll')">
-      <NuGetPackageId>Raylib-CsLo</NuGetPackageId>
-      <NuGetPackageVersion>4.0.1</NuGetPackageVersion>
-      <NuGetItemType>Content</NuGetItemType>
-      <Pack>false</Pack>
-      <Private>False</Private>
-      <Link>raylib.dll</Link>
-    </Content>
-  </ItemGroup>
-  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Content Include="$(NuGetPackageRoot)raywrapper\0.4.0-beta-9.2\contentFiles\any\net6.0\Resources\AddedAssets\Font\CascadiaCode_License.txt" Condition="Exists('$(NuGetPackageRoot)raywrapper\0.4.0-beta-9.2\contentFiles\any\net6.0\Resources\AddedAssets\Font\CascadiaCode_License.txt')">
+    <Content Include="$(NuGetPackageRoot)raywrapper\0.4.0-beta-9.2.2\contentFiles\any\net6.0\Resources\AddedAssets\Font\CascadiaCode_License.txt" Condition="Exists('$(NuGetPackageRoot)raywrapper\0.4.0-beta-9.2.2\contentFiles\any\net6.0\Resources\AddedAssets\Font\CascadiaCode_License.txt')">
       <NuGetPackageId>RayWrapper</NuGetPackageId>
-      <NuGetPackageVersion>0.4.0-beta-9.2</NuGetPackageVersion>
+      <NuGetPackageVersion>0.4.0-beta-9.2.2</NuGetPackageVersion>
       <NuGetItemType>Content</NuGetItemType>
       <Pack>false</Pack>
       <Private>False</Private>

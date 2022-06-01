@@ -3,7 +3,6 @@ D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Debug\net6.0\The Prison
 D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Debug\net6.0\The Prison Escape.runtimeconfig.json
 D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Debug\net6.0\The Prison Escape.dll
 D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Debug\net6.0\The Prison Escape.pdb
-D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Debug\net6.0\DiscordRPC.dll
 D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Debug\net6.0\Microsoft.Toolkit.HighPerformance.dll
 D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Debug\net6.0\Newtonsoft.Json.dll
 D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Debug\net6.0\Raylib-CsLo.dll
@@ -20,8 +19,6 @@ D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Debug\net6.0\runtimes\w
 D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Debug\net6.0\runtimes\win-x86\native\raygui.dll
 D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Debug\net6.0\runtimes\win-x86\native\raygui.pdb
 D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Debug\net6.0\runtimes\win-x86\native\raylib.pdb
-D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Debug\net6.0\RayWrapper.Collision.dll
-D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Debug\net6.0\RayWrapper.Collision.pdb
 D:\RiderProjects\The Prison Escape\The Prison Escape\obj\Debug\net6.0\The Prison Escape.csproj.AssemblyReference.cache
 D:\RiderProjects\The Prison Escape\The Prison Escape\obj\Debug\net6.0\The Prison Escape.GeneratedMSBuildEditorConfig.editorconfig
 D:\RiderProjects\The Prison Escape\The Prison Escape\obj\Debug\net6.0\The Prison Escape.AssemblyInfoInputs.cache
@@ -33,3 +30,36 @@ D:\RiderProjects\The Prison Escape\The Prison Escape\obj\Debug\net6.0\refint\The
 D:\RiderProjects\The Prison Escape\The Prison Escape\obj\Debug\net6.0\The Prison Escape.pdb
 D:\RiderProjects\The Prison Escape\The Prison Escape\obj\Debug\net6.0\The Prison Escape.genruntimeconfig.cache
 D:\RiderProjects\The Prison Escape\The Prison Escape\obj\Debug\net6.0\ref\The Prison Escape.dll
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Debug\net6.0\assets\Graphics\GUI\Buttons.png
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Debug\net6.0\assets\Graphics\GUI\GUI.png
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Debug\net6.0\assets\Graphics\GUI\InventoryButtons.png
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Debug\net6.0\assets\Graphics\Icon.png
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Debug\net6.0\assets\Graphics\Items\items.png
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Debug\net6.0\assets\items.json
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Debug\net6.0\assets\Levels\ground.png
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Debug\net6.0\assets\Levels\tiles\tutorial.png
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Debug\net6.0\assets\MainMenu\buttonBg.png
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Debug\net6.0\assets\MainMenu\buttonBgActive.png
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Debug\net6.0\assets\MainMenu\logo.png
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Debug\net6.0\assets\MainMenu\theme.png
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Debug\net6.0\assets\Player\525.png
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Debug\net6.0\assets\Player\526.png
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Debug\net6.0\assets\Player\549.png
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Debug\net6.0\assets\Player\555.png
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Debug\net6.0\assets\Player\564.png
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Debug\net6.0\assets\Player\567.png
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Debug\net6.0\assets\Player\568.png
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Debug\net6.0\assets\Player\569.png
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Debug\net6.0\assets\Player\Animation-0 Direction-0 Frame-0.png
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Debug\net6.0\assets\Player\Animation-0 Direction-0 Frame-1.png
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Debug\net6.0\assets\Player\Animation-0 Direction-16 Frame-0.png
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Debug\net6.0\assets\Player\Animation-0 Direction-16 Frame-1.png
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Debug\net6.0\assets\Player\Animation-0 Direction-24 Frame-0.png
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Debug\net6.0\assets\Player\Animation-0 Direction-24 Frame-1.png
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Debug\net6.0\assets\Player\Animation-0 Direction-8 Frame-0.png
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Debug\net6.0\assets\Player\Animation-0 Direction-8 Frame-1.png
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Debug\net6.0\assets\Player\player.png
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Debug\net6.0\assets\Player\PlayerMovement.png
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Debug\net6.0\assets\tiles.json
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Debug\net6.0\assets\Worlds\created_level.txt
+D:\RiderProjects\The Prison Escape\The Prison Escape\bin\Debug\net6.0\assets\Worlds\zeros.txt

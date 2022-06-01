@@ -2,8 +2,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The Prison Escape", "The Prison Escape\The Prison Escape.csproj", "{BB372AEE-0680-4BB6-9A61-AF1B7495724E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RayWrapper.Collision", "RayWrapper.Collision\RayWrapper.Collision.csproj", "{45225B5A-D894-435C-AB7C-604BE6E57090}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

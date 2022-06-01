@@ -2,28 +2,6 @@
   "version": 3,
   "targets": {
     "net6.0": {
-      "DiscordRichPresence/1.0.175": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Win32.Registry": "4.5.0",
-          "Newtonsoft.Json": "12.0.2"
-        },
-        "compile": {
-          "lib/netstandard2.0/DiscordRPC.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/DiscordRPC.dll": {}
-        }
-      },
-      "Microsoft.NETCore.Platforms/2.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard1.0/_._": {}
-        },
-        "runtime": {
-          "lib/netstandard1.0/_._": {}
-        }
-      },
       "Microsoft.Toolkit.HighPerformance/7.1.2": {
         "type": "package",
         "compile": {
@@ -31,29 +9,6 @@
         },
         "runtime": {
           "lib/net5.0/Microsoft.Toolkit.HighPerformance.dll": {}
-        }
-      },
-      "Microsoft.Win32.Registry/4.5.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Security.AccessControl": "4.5.0",
-          "System.Security.Principal.Windows": "4.5.0"
-        },
-        "compile": {
-          "ref/netstandard2.0/Microsoft.Win32.Registry.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.Win32.Registry.dll": {}
-        },
-        "runtimeTargets": {
-          "runtimes/unix/lib/netstandard2.0/Microsoft.Win32.Registry.dll": {
-            "assetType": "runtime",
-            "rid": "unix"
-          },
-          "runtimes/win/lib/netstandard2.0/Microsoft.Win32.Registry.dll": {
-            "assetType": "runtime",
-            "rid": "win"
-          }
         }
       },
       "Newtonsoft.Json/13.0.1": {
@@ -77,8 +32,8 @@
           "lib/netstandard2.1/Raylib-CsLo.dll": {}
         },
         "contentFiles": {
-          "contentFiles/any/netstandard2.1/raylib.dll": {
-            "buildAction": "Content",
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
             "codeLanguage": "any",
             "copyToOutput": false
           }
@@ -130,7 +85,7 @@
           }
         }
       },
-      "RayWrapper/0.4.0-beta-9.2": {
+      "RayWrapper/0.4.0-beta-9.2.2": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
@@ -151,47 +106,6 @@
           }
         }
       },
-      "System.Security.AccessControl/4.5.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "2.0.0",
-          "System.Security.Principal.Windows": "4.5.0"
-        },
-        "compile": {
-          "ref/netstandard2.0/System.Security.AccessControl.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Security.AccessControl.dll": {}
-        },
-        "runtimeTargets": {
-          "runtimes/win/lib/netcoreapp2.0/System.Security.AccessControl.dll": {
-            "assetType": "runtime",
-            "rid": "win"
-          }
-        }
-      },
-      "System.Security.Principal.Windows/4.5.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "2.0.0"
-        },
-        "compile": {
-          "ref/netstandard2.0/System.Security.Principal.Windows.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Security.Principal.Windows.dll": {}
-        },
-        "runtimeTargets": {
-          "runtimes/unix/lib/netcoreapp2.0/System.Security.Principal.Windows.dll": {
-            "assetType": "runtime",
-            "rid": "unix"
-          },
-          "runtimes/win/lib/netcoreapp2.0/System.Security.Principal.Windows.dll": {
-            "assetType": "runtime",
-            "rid": "win"
-          }
-        }
-      },
       "ZimonIsHimUtils/1.1.0": {
         "type": "package",
         "compile": {
@@ -200,59 +114,10 @@
         "runtime": {
           "lib/net5.0/ZimonIsHimUtils.dll": {}
         }
-      },
-      "RayWrapper.Collision/0.1.1": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "RayWrapper": "0.4.0-beta-9.1",
-          "Raylib-CsLo": "4.0.1",
-          "ZimonIsHimUtils": "1.1.0"
-        },
-        "compile": {
-          "bin/placeholder/RayWrapper.Collision.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/RayWrapper.Collision.dll": {}
-        }
       }
     }
   },
   "libraries": {
-    "DiscordRichPresence/1.0.175": {
-      "sha512": "qSWobPTbvHh9gOoBYT8C8eUhKtVdBI/WvW7GY9lNMEtsZIpL6nxCvYJwjsGL3dqlEAGY5k0vdq+wnuDLVBSV2w==",
-      "type": "package",
-      "path": "discordrichpresence/1.0.175",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "discordrichpresence.1.0.175.nupkg.sha512",
-        "discordrichpresence.nuspec",
-        "lib/net35/DiscordRPC.dll",
-        "lib/net35/DiscordRPC.pdb",
-        "lib/net35/DiscordRPC.xml",
-        "lib/netstandard2.0/DiscordRPC.dll",
-        "lib/netstandard2.0/DiscordRPC.pdb",
-        "lib/netstandard2.0/DiscordRPC.xml"
-      ]
-    },
-    "Microsoft.NETCore.Platforms/2.0.0": {
-      "sha512": "VdLJOCXhZaEMY7Hm2GKiULmn7IEPFE4XC5LPSfBVCUIA8YLZVh846gtfBJalsPQF2PlzdD7ecX7DZEulJ402ZQ==",
-      "type": "package",
-      "path": "microsoft.netcore.platforms/2.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/netstandard1.0/_._",
-        "microsoft.netcore.platforms.2.0.0.nupkg.sha512",
-        "microsoft.netcore.platforms.nuspec",
-        "runtime.json",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
     "Microsoft.Toolkit.HighPerformance/7.1.2": {
       "sha512": "cezzRky0BUJyYmSrcQUcX8qAv90JfUwCqWEbqfWZLHyeANo9/LWgW6y50pqbyc8r8SPXVsu2GNH98fB3VxrnvA==",
       "type": "package",
@@ -283,46 +148,6 @@
         "lib/netstandard2.1/Microsoft.Toolkit.HighPerformance.xml",
         "microsoft.toolkit.highperformance.7.1.2.nupkg.sha512",
         "microsoft.toolkit.highperformance.nuspec"
-      ]
-    },
-    "Microsoft.Win32.Registry/4.5.0": {
-      "sha512": "+FWlwd//+Tt56316p00hVePBCouXyEzT86Jb3+AuRotTND0IYn0OO3obs1gnQEs/txEnt+rF2JBGLItTG+Be6A==",
-      "type": "package",
-      "path": "microsoft.win32.registry/4.5.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/net46/Microsoft.Win32.Registry.dll",
-        "lib/net461/Microsoft.Win32.Registry.dll",
-        "lib/netstandard1.3/Microsoft.Win32.Registry.dll",
-        "lib/netstandard2.0/Microsoft.Win32.Registry.dll",
-        "microsoft.win32.registry.4.5.0.nupkg.sha512",
-        "microsoft.win32.registry.nuspec",
-        "ref/net46/Microsoft.Win32.Registry.dll",
-        "ref/net461/Microsoft.Win32.Registry.dll",
-        "ref/net461/Microsoft.Win32.Registry.xml",
-        "ref/netstandard1.3/Microsoft.Win32.Registry.dll",
-        "ref/netstandard1.3/Microsoft.Win32.Registry.xml",
-        "ref/netstandard1.3/de/Microsoft.Win32.Registry.xml",
-        "ref/netstandard1.3/es/Microsoft.Win32.Registry.xml",
-        "ref/netstandard1.3/fr/Microsoft.Win32.Registry.xml",
-        "ref/netstandard1.3/it/Microsoft.Win32.Registry.xml",
-        "ref/netstandard1.3/ja/Microsoft.Win32.Registry.xml",
-        "ref/netstandard1.3/ko/Microsoft.Win32.Registry.xml",
-        "ref/netstandard1.3/ru/Microsoft.Win32.Registry.xml",
-        "ref/netstandard1.3/zh-hans/Microsoft.Win32.Registry.xml",
-        "ref/netstandard1.3/zh-hant/Microsoft.Win32.Registry.xml",
-        "ref/netstandard2.0/Microsoft.Win32.Registry.dll",
-        "ref/netstandard2.0/Microsoft.Win32.Registry.xml",
-        "runtimes/unix/lib/netstandard2.0/Microsoft.Win32.Registry.dll",
-        "runtimes/win/lib/net46/Microsoft.Win32.Registry.dll",
-        "runtimes/win/lib/net461/Microsoft.Win32.Registry.dll",
-        "runtimes/win/lib/netstandard1.3/Microsoft.Win32.Registry.dll",
-        "runtimes/win/lib/netstandard2.0/Microsoft.Win32.Registry.dll",
-        "useSharedDesignerContext.txt",
-        "version.txt"
       ]
     },
     "Newtonsoft.Json/13.0.1": {
@@ -382,103 +207,18 @@
         "runtimes/win-x86/native/raylib.pdb"
       ]
     },
-    "RayWrapper/0.4.0-beta-9.2": {
-      "sha512": "hLj21QR9Bs6zYwWyXFhnbgFhh1fTRUjOZgTV4ZqtGhh2MPBtQwdNzefy+JPG9OqQQb+703m8RPxA0/C1xRah4A==",
+    "RayWrapper/0.4.0-beta-9.2.2": {
+      "sha512": "n3SofTXH2Ygq52ygg67IXns0rpEhbyydKYkxBRaGyjyk3+GXSANoknc8ivdcetNn7M6Xgn5f/XgZbkMSWBw5yA==",
       "type": "package",
-      "path": "raywrapper/0.4.0-beta-9.2",
+      "path": "raywrapper/0.4.0-beta-9.2.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "content/Resources/AddedAssets/Font/CascadiaCode_License.txt",
         "contentFiles/any/net6.0/Resources/AddedAssets/Font/CascadiaCode_License.txt",
         "lib/net6.0/RayWrapper.dll",
-        "raywrapper.0.4.0-beta-9.2.nupkg.sha512",
+        "raywrapper.0.4.0-beta-9.2.2.nupkg.sha512",
         "raywrapper.nuspec"
-      ]
-    },
-    "System.Security.AccessControl/4.5.0": {
-      "sha512": "vW8Eoq0TMyz5vAG/6ce483x/CP83fgm4SJe5P8Tb1tZaobcvPrbMEL7rhH1DRdrYbbb6F0vq3OlzmK0Pkwks5A==",
-      "type": "package",
-      "path": "system.security.accesscontrol/4.5.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/net46/System.Security.AccessControl.dll",
-        "lib/net461/System.Security.AccessControl.dll",
-        "lib/netstandard1.3/System.Security.AccessControl.dll",
-        "lib/netstandard2.0/System.Security.AccessControl.dll",
-        "lib/uap10.0.16299/_._",
-        "ref/net46/System.Security.AccessControl.dll",
-        "ref/net461/System.Security.AccessControl.dll",
-        "ref/net461/System.Security.AccessControl.xml",
-        "ref/netstandard1.3/System.Security.AccessControl.dll",
-        "ref/netstandard1.3/System.Security.AccessControl.xml",
-        "ref/netstandard1.3/de/System.Security.AccessControl.xml",
-        "ref/netstandard1.3/es/System.Security.AccessControl.xml",
-        "ref/netstandard1.3/fr/System.Security.AccessControl.xml",
-        "ref/netstandard1.3/it/System.Security.AccessControl.xml",
-        "ref/netstandard1.3/ja/System.Security.AccessControl.xml",
-        "ref/netstandard1.3/ko/System.Security.AccessControl.xml",
-        "ref/netstandard1.3/ru/System.Security.AccessControl.xml",
-        "ref/netstandard1.3/zh-hans/System.Security.AccessControl.xml",
-        "ref/netstandard1.3/zh-hant/System.Security.AccessControl.xml",
-        "ref/netstandard2.0/System.Security.AccessControl.dll",
-        "ref/netstandard2.0/System.Security.AccessControl.xml",
-        "ref/uap10.0.16299/_._",
-        "runtimes/win/lib/net46/System.Security.AccessControl.dll",
-        "runtimes/win/lib/net461/System.Security.AccessControl.dll",
-        "runtimes/win/lib/netcoreapp2.0/System.Security.AccessControl.dll",
-        "runtimes/win/lib/netstandard1.3/System.Security.AccessControl.dll",
-        "runtimes/win/lib/uap10.0.16299/_._",
-        "system.security.accesscontrol.4.5.0.nupkg.sha512",
-        "system.security.accesscontrol.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
-    "System.Security.Principal.Windows/4.5.0": {
-      "sha512": "U77HfRXlZlOeIXd//Yoj6Jnk8AXlbeisf1oq1os+hxOGVnuG+lGSfGqTwTZBoORFF6j/0q7HXIl8cqwQ9aUGqQ==",
-      "type": "package",
-      "path": "system.security.principal.windows/4.5.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/net46/System.Security.Principal.Windows.dll",
-        "lib/net461/System.Security.Principal.Windows.dll",
-        "lib/netstandard1.3/System.Security.Principal.Windows.dll",
-        "lib/netstandard2.0/System.Security.Principal.Windows.dll",
-        "lib/uap10.0.16299/_._",
-        "ref/net46/System.Security.Principal.Windows.dll",
-        "ref/net461/System.Security.Principal.Windows.dll",
-        "ref/net461/System.Security.Principal.Windows.xml",
-        "ref/netstandard1.3/System.Security.Principal.Windows.dll",
-        "ref/netstandard1.3/System.Security.Principal.Windows.xml",
-        "ref/netstandard1.3/de/System.Security.Principal.Windows.xml",
-        "ref/netstandard1.3/es/System.Security.Principal.Windows.xml",
-        "ref/netstandard1.3/fr/System.Security.Principal.Windows.xml",
-        "ref/netstandard1.3/it/System.Security.Principal.Windows.xml",
-        "ref/netstandard1.3/ja/System.Security.Principal.Windows.xml",
-        "ref/netstandard1.3/ko/System.Security.Principal.Windows.xml",
-        "ref/netstandard1.3/ru/System.Security.Principal.Windows.xml",
-        "ref/netstandard1.3/zh-hans/System.Security.Principal.Windows.xml",
-        "ref/netstandard1.3/zh-hant/System.Security.Principal.Windows.xml",
-        "ref/netstandard2.0/System.Security.Principal.Windows.dll",
-        "ref/netstandard2.0/System.Security.Principal.Windows.xml",
-        "ref/uap10.0.16299/_._",
-        "runtimes/unix/lib/netcoreapp2.0/System.Security.Principal.Windows.dll",
-        "runtimes/win/lib/net46/System.Security.Principal.Windows.dll",
-        "runtimes/win/lib/net461/System.Security.Principal.Windows.dll",
-        "runtimes/win/lib/netcoreapp2.0/System.Security.Principal.Windows.dll",
-        "runtimes/win/lib/netstandard1.3/System.Security.Principal.Windows.dll",
-        "runtimes/win/lib/uap10.0.16299/_._",
-        "system.security.principal.windows.4.5.0.nupkg.sha512",
-        "system.security.principal.windows.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
       ]
     },
     "ZimonIsHimUtils/1.1.0": {
@@ -493,21 +233,11 @@
         "zimonishimutils.1.1.0.nupkg.sha512",
         "zimonishimutils.nuspec"
       ]
-    },
-    "RayWrapper.Collision/0.1.1": {
-      "type": "project",
-      "path": "../RayWrapper.Collision/RayWrapper.Collision.csproj",
-      "msbuildProject": "../RayWrapper.Collision/RayWrapper.Collision.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "DiscordRichPresence >= 1.0.175",
-      "Newtonsoft.Json >= 13.0.1",
-      "RayWrapper >= 0.4.0-beta-9.2",
-      "RayWrapper.Collision >= 0.1.1",
-      "Raylib-CsLo >= 4.0.1",
-      "ZimonIsHimUtils >= 1.1.0"
+      "RayWrapper >= 0.4.0-beta-9.2.2"
     ]
   },
   "packageFolders": {
@@ -538,11 +268,7 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {
-            "D:\\RiderProjects\\The Prison Escape\\RayWrapper.Collision\\RayWrapper.Collision.csproj": {
-              "projectPath": "D:\\RiderProjects\\The Prison Escape\\RayWrapper.Collision\\RayWrapper.Collision.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -555,25 +281,9 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
-          "DiscordRichPresence": {
-            "target": "Package",
-            "version": "[1.0.175, )"
-          },
-          "Newtonsoft.Json": {
-            "target": "Package",
-            "version": "[13.0.1, )"
-          },
           "RayWrapper": {
             "target": "Package",
-            "version": "[0.4.0-beta-9.2, )"
-          },
-          "Raylib-CsLo": {
-            "target": "Package",
-            "version": "[4.0.1, )"
-          },
-          "ZimonIsHimUtils": {
-            "target": "Package",
-            "version": "[1.1.0, )"
+            "version": "[0.4.0-beta-9.2.2, )"
           }
         },
         "imports": [
